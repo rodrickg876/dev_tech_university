@@ -28,7 +28,8 @@
           <div class="navbar-nav me-auto">
             <a class="nav-link nav-item" aria-current="page" href="index.php">Home</a>
             <a class="nav-link nav-item" href="aboutus.php">About Us</a>
-            <a class="nav-link nav-item" href="services.php">Our Services</a>
+            <a class="nav-link nav-item" href="campus.php">Campus</a>
+            <a class="nav-link nav-item" href="infocus.php">In Focus</a>
             <a class="nav-link nav-item" href="register.php">Subscribe</a>
             <a class="nav-link nav-item " href="contactus.php">Contact</a>          
             

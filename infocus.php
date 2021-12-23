@@ -1,5 +1,5 @@
 <?php 
-    $title='Our Services';
+    $title='In Focus';
     require_once 'includes/header.php';
 ?>
 
