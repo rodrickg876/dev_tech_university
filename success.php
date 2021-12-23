@@ -11,7 +11,20 @@
          Subscription was Completed successfully!
     </div>
 
-
+    <div class="container mt-4 mb-4 p-3 d-flex justify-content-center col-6 offset-3" >
+        <div class="col-6">            
+        <img src="<?php echo empty($_SESSION['imagepath']) ? "uploads/default.png" : $_SESSION['imagepath'] ; ?>" height="250" width="250" class="img img-thumbnail" />
+        </div>
+        <div class="col-6">
+             <p><b>First Name: </b><?php echo $_SESSION['firstname'] ?>
+             <p><b>Last Name: </b><?php echo $_SESSION['lastname'] ?>
+            <p><b>Email: </b><?php echo $_SESSION['email'] ?>
+            <p><b>Gender: </b><?php echo $_SESSION['home'] ?>
+            <p><b>Address: </b><?php echo $_SESSION['gender'] ?>
+            <br><br>
+            
+    </div>
+</div>
 
     <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
     <div class="card p-4">
