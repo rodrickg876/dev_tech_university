@@ -7,10 +7,10 @@
     $charset = 'utf8mb4';
 
     //remote connections
-    // $host = 'remotemysql.com';
-    // $db = 'EKKNRW31mk';
-    // $user = 'EKKNRW31mk';
-    // $pass = 'bxicmaEZs5';
+    // $host = '';
+    // $db = '';
+    // $user = '';
+    // $pass = '';
     // $charset = 'utf8mb4';
     
 
