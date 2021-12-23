@@ -39,3 +39,11 @@ body{clear: both;}
     text-align: center;
     padding:20px;
 }
+
+.hd3{
+    vertical-align: middle;
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
+font-size: 20px;
+}
