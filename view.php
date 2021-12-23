@@ -13,28 +13,26 @@
         $result = $crud->getSubsDetails($id);
  ?>
 
-<div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-    <div class="card p-4">
-        <div class=" image d-flex flex-column justify-content-center align-items-center"> 
 
-                <button class="btn btn-secondary"> <img src="<?php echo empty($result['avatar']) ? "uploads/default.png" : $result['avatar'] ; ?>" height="200" width="200" /></button> 
-                <span class="name mt-3"><b><?php echo $result['firstname'].' '. $result['lastname'] ?></b></span> 
-                <span class="idd"><?php echo $result['email'] ?></span>
-
-            <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
-                <span class="idd1"><?php echo $result['gender'] ?></span> <span><i class="fa fa-copy"></i></span> </div>
-            <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <span ><?php echo $result['home'] ?></span> </div>
-            <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> <span><i class="fa fa-twitter"></i></span> <span><i class="fa fa-facebook-f"></i></span> <span><i class="fa fa-instagram"></i></span> <span><i class="fa fa-linkedin"></i></span> </div>
+<div class="container mt-4 mb-4 p-3 d-flex justify-content-center col-6 offset-3" >
+        <div class="col-6">            
+        <img src="<?php echo empty($result['avatar']) ? "uploads/default.png" : $result['avatar'] ; ?>" height="250" width="250" class="img img-thumbnail" />
         </div>
-        <div class="text-center">
-            <br>
-        <a href="admin.php" class="btn btn-outline-dark btn-sm">Back to List</a>
+        <div class="col-6">
+             <p><b>First Name: </b><?php echo $result['firstname'] ?>
+             <p><b>Last Name: </b><?php echo $result['lastname'] ?>
+            <p><b>Email: </b><?php echo $result['email'] ?>
+            <p><b>Gender: </b><?php echo $result['home'] ?>
+            <p><b>Address: </b><?php echo $result['gender'] ?>
+            <br><br>
+            <a href="admin.php" class="btn btn-outline-dark btn-sm">Back to List</a>
         <a href="edit.php?id=<?php echo $result['sub_id'] ?>" class="btn btn-warning btn-sm">Edit</a>
         <a href="delete.php?id=<?php echo $result['sub_id'] ?>" class="btn btn-danger btn-sm" 
                     onclick="return confirm('Are you sure you want to delete this subscriber?');" >Delete</a>
-        </div>
     </div>
 </div>
+
+
 
 <?php } ?>
 
